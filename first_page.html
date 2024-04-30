@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+/* 整体样式 */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* 导航栏样式 */
+.top_navigation_bar {
+  background-color: #fff;
+  color: #fff;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* LOGO 样式 */
+.LOGO_picture a {
+  display: block;
+}
+
+.LOGO_picture img {
+  max-height: 70px;
+}
+
+/* 导航链接样式 */
+.top_navigation_e_education_sourse,
+.top_navigation_class,
+.top_navigation_question_bank {
+  margin-right: 20px;
+}
+
+.top_navigation_e_education_sourse a,
+.top_navigation_class a,
+.top_navigation_question_bank a {
+  color: black;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.top_navigation_e_education_sourse a:hover,
+.top_navigation_class a:hover,
+.top_navigation_question_bank a:hover {
+  color: #ccc;
+}
+
+/* 搜索框样式 */
+.top_navigation_serch_container {
+  display: flex;
+  align-items: center;
+}
+
+.serch_input {
+  width: 300px;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.search_button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.search_button:hover {
+  background-color: #0056b3;
+}
+
+/* 登录注册按钮样式 */
+.top_navigation_login_register {
+  display: flex;
+  align-items: center;
+}
+
+.login_btn,
+.refister_btn {
+  color: black;
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.login_btn {
+  background-color: #007bff;
+  margin-right: 10px;
+}
+
+.login_btn:hover {
+  background-color: #0056b3;
+}
+
+.refister_btn {
+  background-color: #28a745;
+}
+
+.refister_btn:hover {
+  background-color: #218838;
+}
+</style>
+</head>
+<body>
+<nav>
+<div class="top_navigation_bar" >
+  <div class="LOGO_picture" style="display:inline-block">
+    <a href="#" target="_top">
+      <img src="../Picture/first_page_LOGO.png" width="200" height="100"/>
+    </a>
+  </div>
+  <div class="top_navigation_e_education_sourse" style="display:inline-block;">
+    <a href="#" target="_top">
+      <span class="top_navigation_course">课程</span>
+    </a>
+  </div>
+  <div class="top_navigation_class" style="display: inline-block;">
+    <a href="#" target="_top">
+      <span>班级</span>
+    </a>
+  </div>  
+  <div class="top_navigation_question_bank" style="display: inline-block;">
+    <a href="#" target="_top">
+      <span>题库</span>
+    </a>
+  </div> 
+  <div class="top_navigation_serch_container" style="display: inline-block;">
+    <form class="top_serch_container_form">
+      <input type="text" class="serch_input" placeholder="搜索课程资源">
+      <button type="submit" class="search_button">
+        <i class="fa_search">搜索</i>
+      </button>
+    </form>
+  </div>
+  <div class="top_navigation_login_register" style="display: inline-block;">
+    <a href="#" target="_top" class="login_btn">登录</a>
+    <a href="#" target="_top" class="refister_btn">注册</a>
+  </div>
+</div>
+</body>
+</html>
