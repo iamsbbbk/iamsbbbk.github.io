@@ -1,0 +1,50 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(120deg, #84fab0, #8fd3f4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.register-form {
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+    width: 350px;
+    max-width: 90%;
+    position: relative;
+    animation: appear 500ms ease-out forwards;
+}
+@keyframes appear {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+input[type="text"], input[type="password"], input[type="email"] {
+    width: 94%;
+    padding: 10px;
+    margin: 10px 0;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 300ms;
+}
+input:focus {
+    border-color: #66a6ff;
+}
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #66a6ff;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 300ms;
+}
+button:hover {
+    background-color: #5591d2;
+}

@@ -1,0 +1,143 @@
+:root {
+  --primary-color: #007bff;
+  --hover-primary-color: #0056b3;
+  --background-color: #f4f4f4;
+  --text-color: #333;
+  --button-background-color: var(--primary-color);
+  --button-hover-background-color: var(--hover-primary-color);
+  --button-text-color: #fff;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.top-navigation-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: var(--background-color);
+  box-shadow:0px 2px 5px rgba(0,0,0,0.1);
+}
+
+.logo img {
+  height: 50px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  padding: 0 15px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--text-color);
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: var(--primary-color);
+}
+
+.search-container input[type="text"] {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.search-container button {
+  background-color: var(--button-background-color);
+  border: none;
+  color: var(--button-text-color);
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.search-container button:hover {
+  background-color: var(--button-hover-background-color);
+}
+
+.login-register button {
+  background-color: var(--button-background-color);
+  border: none;
+  margin-left: 10px;
+  padding: 5px 15px;
+  color: var(--button-text-color);
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.login-register button:hover {
+  background-color: var(--button-hover-background-color);
+}
+
+.theme-switcher {
+  cursor: pointer;
+  color: var(--text-color);
+  display: flex;
+  align-items: center;
+}
+
+.theme-switcher i {
+  margin-right: 5px;
+}
+
+#hero, #courses, #about, #events {
+  padding: 20px;
+  text-align: center;
+}
+
+#courses .course-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+#courses article {
+  border: 1px solid #ccc;
+  padding: 10px;
+  width: 30%;
+  box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #ddd;
+  color: #333;
+}
+
+footer p {
+  margin: 5px 0;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+      display: none; /* Hide navigation links on small devices */
+  }
+
+  .logo img {
+      height: 40px;
+  }
+
+  #courses .course-container {
+      flex-direction: column;
+  }
+
+  #courses article {
+      width: 100%;
+      margin-bottom: 20px;
+  }
+}
