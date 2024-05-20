@@ -1,1 +1,44 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast</title>
+    <link rel="stylesheet" href="./test.css">
+</head>
+<body>
+    <div class="weather-container">
+        <div class="weather-header">
+            <h1>Weather Forecast</h1>
+            <input type="text" id="city-input" placeholder="Enter city name">
+            <button id="get-weather">Get Weather</button>
+        </div>
+        <div class="weather-today">
+            <div class="location" id="location">New York, NY</div>
+            <div class="temperature" id="temperature">22°C</div>
+            <div class="description" id="description">Sunny</div>
+            <div class="icon" id="icon">
+                <img src="./Picture/sunny.png" alt="Sunny">
+            </div>
+        </div>
+         <div class="weather-forecast">
+            <div class="forecast-day">
+                <div class="day">Mon</div>
+                <div class="icon">
+                    <img src="./Picture/cloudy.png" alt="Cloudy">
+                </div>
+                <div class="temp">18°C</div>
+            </div>
+            <div class="forecast-day">
+                <div class="day">Tue</div>
+                <div class="icon">
+                    <img src="./Picture/rainy.jpg" alt="Rainy">
+                </div>
+                <div class="temp">16°C</div>
+            </div>
+            <!-- Add more forecast days as needed -->
+        </div>
+    </div>
+    <script src="./test.js"></script>
+</body>
+</html>
