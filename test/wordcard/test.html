@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>单词记忆</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="./CSS/top-navigation.css">
+</head>
+<body>
+  <header class="top-navigation-bar">
+    <div class="logo">
+      <img src="images/logo.png" alt="Logo">
+    </div>
+    <ul class="nav-links">
+      <li><a href="#">主页</a></li>
+      <li><a href="#">关于</a></li>
+      <li><a href="#">联系</a></li>
+    </ul>
+    <div class="search-container">
+      <input type="text" placeholder="搜索">
+      <button>搜索</button>
+    </div>
+    <div class="login-register">
+      <button>登录</button>
+      <button>注册</button>
+    </div>
+    <div class="theme-switcher">
+      <i class="fas fa-moon"></i>
+      晚间模式
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="content">
+      <section id="hero">
+        <h1>Word Memory</h1>
+      </section>
+      <section id="word-card" class="word-card">
+        <h2>单词卡片</h2>
+        <img src="./Picture/wordcard/apple.jpg" alt="Placeholder">
+        <p class="definition"></p>
+        <p class="example"></p>
+        <div class="options-container"></div>
+      </section>
+    </div>
+    <aside class="sidebar">
+      <div class="sidebar-section">
+        <h2>我的单词书</h2>
+        <!-- 这里将显示单词书内容 -->
+      </div>
+      <div class="sidebar-section">
+        <h2>学习进度</h2>
+        <div class="progress-bar">
+          <div class="progress-bar-inner"></div>
+        </div>
+        <p>已学单词/全部单词</p>
+      </div>
+      <div class="sidebar-section">
+        <h2>近日学习单词折线</h2>
+        <div class="chart-container">
+          <canvas id="recent-words-chart" class="chart"></canvas>
+        </div>
+      </div>
+      <div class="sidebar-section">
+        <h2>艾宾浩斯记忆遗忘曲线</h2>
+        <div class="chart-container">
+          <canvas id="ebbinghaus-curve-chart" class="chart"></canvas>
+        </div>
+      </div>
+    </aside>
+  </main>
+
+  <footer>
+    <p>© 2024 单词记忆系统. 保留所有权利。</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
